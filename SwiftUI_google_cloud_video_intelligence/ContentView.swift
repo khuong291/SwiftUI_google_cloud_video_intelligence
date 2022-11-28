@@ -6,21 +6,31 @@
 //
 
 import SwiftUI
+import Firebase
+import FirebaseAuth
 
 struct ContentView: View {
+    @State var email = "khuong.pham@2359media.com"
+    @State var password = "Password123!"
+
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Test")
+            TextField("Email", text: $email)
+            SecureField("Password", text: $password)
+            Button(action: login) {
+                Text("Sign in")
+            }
         }
         .padding()
     }
-}
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+    func login() {
+        Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
+            if error != nil {
+                print(error?.localizedDescription ?? "")
+            } else {
+                print(result?.user.getIDToken())
+            }
+        }
     }
 }

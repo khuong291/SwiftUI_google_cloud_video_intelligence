@@ -15,6 +15,7 @@
 		1B0B83D929350F4B009CD0F7 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 1B0B83D829350F4B009CD0F7 /* FirebaseFirestore */; };
 		1B0B83DB29350F4B009CD0F7 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1B0B83DA29350F4B009CD0F7 /* FirebaseFirestoreSwift */; };
 		1B0B83DD29350F58009CD0F7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0B83DC29350F58009CD0F7 /* Constants.swift */; };
+		1B0B83DF293510A9009CD0F7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B0B83DE293510A9009CD0F7 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1B0B83CB29350D03009CD0F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B0B83CE29350D03009CD0F7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1B0B83DC29350F58009CD0F7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1B0B83DE293510A9009CD0F7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				1B0B83CB29350D03009CD0F7 /* Assets.xcassets */,
 				1B0B83CD29350D03009CD0F7 /* Preview Content */,
 				1B0B83DC29350F58009CD0F7 /* Constants.swift */,
+				1B0B83DE293510A9009CD0F7 /* GoogleService-Info.plist */,
 			);
 			path = SwiftUI_google_cloud_video_intelligence;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 			files = (
 				1B0B83CF29350D03009CD0F7 /* Preview Assets.xcassets in Resources */,
 				1B0B83CC29350D03009CD0F7 /* Assets.xcassets in Resources */,
+				1B0B83DF293510A9009CD0F7 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
