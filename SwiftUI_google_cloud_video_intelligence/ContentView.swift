@@ -29,7 +29,9 @@ struct ContentView: View {
             if error != nil {
                 print(error?.localizedDescription ?? "")
             } else {
-                print(result?.user.getIDToken())
+                Auth.auth().currentUser?.getIDToken() { accessToken, error in
+                    print(accessToken)
+                }
             }
         }
     }
